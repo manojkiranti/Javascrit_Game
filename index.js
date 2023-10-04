@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", async (req, res) => {
   res.sendFile(path.join(__dirname, "public", "home.html"));
 });
-
-app.listen(8080, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
   console.log("Server successfully running on port 8080");
 });
