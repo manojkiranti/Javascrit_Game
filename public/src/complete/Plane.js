@@ -12,7 +12,7 @@ class Plane {
     // for scale and rotation
     this.initialPosition = new Vector3(0, 1, 0);
     this.initialRotation = new Euler(0, Math.PI, 0, "XYZ");
-    this.scaleFactor = 2;
+    this.scaleFactor = 3;
   }
 
   get position() {
